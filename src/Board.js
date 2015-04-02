@@ -173,9 +173,8 @@
       var high = this.get('n') - 1;
 
       for (var i = low; i <= high; i++) {
-        results[i] = this.hasMajorDiagonalConflictAt(i);
+        results.push(this.hasMajorDiagonalConflictAt(i));
       }
-
       return _.contains(results, true);
     },
 
